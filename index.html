@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Link List | Shubham Kumar</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="https://firebasestorage.googleapis.com/v0/b/folio-shubham.appspot.com/o/profile%2Favatar_hi.png?alt=media&token=5307b64c-1e58-4cb5-b21a-74cc29926466"
+                alt="">
+            <h3>Shubham Kumar</h3>
+            <br>
+            <p style="font: 600; font-size:small;">Passionate web and app developer.</p>
+            <p style="font: 600; font-size:small;">An engineer by profession.</p>
+            <p style="font: 600; font-size:small;">Loves making new friends..</p>
+            <br><br>
+            <p>❤Looking for someone special❤</p>
+        </div>
+        <div class="links-list">
+            <div id="links-container"></div>
+        </div>
+        <div class="contact">
+            <a href="https://wa.link/arvsx7" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/ishubhamkr/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/i.shubham.kr/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/shubham.mounster/"><i class="fab fa-facebook"></i></a>
+        </div>
+        <footer>
+            <p>Shubham Kumar 2023</p>
+        </footer>
+
+    </div>
+</body>
+<script>
+
+    const name = "Shubham Kumar";
+
+    const links = [
+        { text: "Schedule 1:1 call", url: "https://topmate.io/shubhamkr", icon: "fa-linkedin" },
+        { text: "LinkedIn", url: "https://www.linkedin.com/in/ishubhamkr/", icon: "fa-linkedin" },
+        { text: "GitHub", url: "https://github.com/shubham0809200", icon: "fa-github" },
+        { text: "Email", url: "mailto:shubham.kr08092000@gmail.com", icon: "far fa-envelope" },
+        { text: "Twitter", url: "https://twitter.com/kr08092000", icon: "fa-twitter" },
+        { text: "Medium", url: "https://medium.com/@i.shubham", icon: "fa-medium" },
+        { text: "WhatsApp", url: "https://wa.link/arvsx7", icon: "fa-whatsapp" },
+
+    ];
+
+    const container = document.getElementById("links-container");
+    links.forEach(link => {
+        const a = document.createElement("a");
+        a.href = link.url;
+        a.innerHTML = `<div class="link"><p>${link.text}</p></div>`;
+        container.appendChild(a);
+    });
+</script>
+
+</html>
