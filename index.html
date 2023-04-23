@@ -49,6 +49,7 @@
 
     const links = [
         { text: "Schedule 1:1 call", url: "https://topmate.io/shubhamkr", icon: "fa-linkedin" },
+        { text: "Portfolio", url: "https://shubhamkr.web.app/", icon: "fa-linkedin" },
         { text: "LinkedIn", url: "https://www.linkedin.com/in/ishubhamkr/", icon: "fa-linkedin" },
         { text: "GitHub", url: "https://github.com/shubham0809200", icon: "fa-github" },
         { text: "Email", url: "mailto:shubham.kr08092000@gmail.com", icon: "far fa-envelope" },
@@ -62,6 +63,7 @@
     links.forEach(link => {
         const a = document.createElement("a");
         a.href = link.url;
+        a.target = "_blank";
         a.innerHTML = `<div class="link"><p>${link.text}</p></div>`;
         container.appendChild(a);
     });
