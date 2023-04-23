@@ -23,8 +23,8 @@
             <h3>Shubham Kumar</h3>
             <br>
             <p style="font: 600; font-size:small;">Passionate web and app developer.</p>
-            <p style="font: 600; font-size:small;">An engineer by profession.</p>
-            <p style="font: 600; font-size:small;">Loves making new friends..</p>
+            <p style="font: 600; font-size:small;">A Software engineer * Loves making new friends..</p>
+            <p style="font: 600; font-size:small;">have a dream to touch the sky.</p>
             <br><br>
             <p>❤Looking for someone special❤</p>
         </div>
@@ -48,14 +48,14 @@
     const name = "Shubham Kumar";
 
     const links = [
-        { text: "Schedule 1:1 call", url: "https://topmate.io/shubhamkr", icon: "fa-linkedin" },
-        { text: "Portfolio", url: "https://shubhamkr.web.app/", icon: "fa-linkedin" },
-        { text: "LinkedIn", url: "https://www.linkedin.com/in/ishubhamkr/", icon: "fa-linkedin" },
-        { text: "GitHub", url: "https://github.com/shubham0809200", icon: "fa-github" },
-        { text: "Email", url: "mailto:shubham.kr08092000@gmail.com", icon: "far fa-envelope" },
-        { text: "Twitter", url: "https://twitter.com/kr08092000", icon: "fa-twitter" },
-        { text: "Medium", url: "https://medium.com/@i.shubham", icon: "fa-medium" },
-        { text: "WhatsApp", url: "https://wa.link/arvsx7", icon: "fa-whatsapp" },
+        { text: "Schedule 1:1 call", url: "https://topmate.io/shubhamkr", title: "Let's connect and chat about your next project!" },
+        { text: "Portfolio", url: "https://shubhamkr.web.app/", title: "Take a look at some of my best work and let's build something great together!" },
+        { text: "LinkedIn", url: "https://www.linkedin.com/in/ishubhamkr/", title: "Let's expand our professional networks and connect on LinkedIn!" },
+        { text: "GitHub", url: "https://github.com/shubham0809200", title: "Explore my code and projects on GitHub - the ultimate playground for developers!" },
+        { text: "Email", url: "mailto:shubham.kr08092000@gmail.com", title: "Feel free to drop me a line at any time - I'm always happy to chat!" },
+        { text: "Twitter", url: "https://twitter.com/kr08092000", title: "Feel free to drop me a line at any time - I'm always happy to chat!" },
+        { text: "Medium", url: "https://medium.com/@i.shubham", title: "Read my latest articles on Medium - a great source of knowledge and inspiration!" },
+        { text: "WhatsApp", url: "https://wa.link/arvsx7", title: "Need to get in touch with me quickly? Shoot me a message on WhatsApp!" },
 
     ];
 
@@ -64,7 +64,7 @@
         const a = document.createElement("a");
         a.href = link.url;
         a.target = "_blank";
-        a.innerHTML = `<div class="link"><p>${link.text}</p></div>`;
+        a.innerHTML = `<div title="${link.title}"  class="link"><p>${link.text}</p></div>`;
         container.appendChild(a);
     });
 </script>
